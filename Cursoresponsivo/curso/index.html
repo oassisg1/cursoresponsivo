@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Agência especializada em Marketing Digital, Criação de Aplicativos Mobile.">
+    <meta name="keywords" content="Agência digital, Marketing, Sites">
+    <meta name="robots" content="index, follow">
+    <meta name="author"  content="Gabriel Assis">
+    <script src="https://kit.fontawesome.com/7829b6ee1e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Titillium+Web&display=swap" rel="stylesheet">
+    <link rel="icon" href="/img/icon.png">
+    <title>NodeProp - Especializada em Soluções Digitais</title>
+</head>
+<body>
+    <!-- MENU -->
+    <header class="cabecalho container">
+       <a href="index.html"><h1 class="logo">NodeProp - Especializada em Soluções Digitais</h1></a>
+       <button type="button" class="btn-menu bg-gradiente"><i class="fa-solid fa-bars fa-lg "></i></button>
+       <nav class="menu">
+        <a class="btn-close"><i class="fa fa-times"></i></a>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Clientes</a></li>
+                <li><a href="">Serviços</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Quem somos</a></li>
+                <li><a href="">Contato</a></li>
+            </ul>
+       </nav>
+    </header>
+    <!-- Banner e Buttons -->
+    <div class="banner container">
+        <div class="title">
+            <h2>OUSER INOVAR</h2>
+            <h3>Criamos experiências e estabelecemos ações estratégicas que conectam marcas e consumidores</h3>
+        </div>
+        <div class="buttons">
+            <button class="btn btn-cadastrar bg-white radius"> Cadastrar  <i class="fa fa-arrow-circle-right"></i></button>
+            <button class="btn btn-sobre bg-black radius"> Sobre <i class="fa fa-question-circle"></i> </button>
+            <button class="btn btn-update bg-white radius"> Novidades<i class="fa-solid fa-font-awesome"></i> </button>
+        </div>
+    </div>
+    <!-- Tipos de serviços -->
+    <main class="servicos container">
+        <article class="servico  bg-white radius">
+            <a href=""><img src="img/criacoes.jpg" alt="Campanhas Publicitárias"></a>
+            <div class="inner">
+                <a href=""> Campanhas Publicitárias</a>
+                <h4>Impressos, VT e Jingles</h4>
+                <p>Se você está precisando de criação de algum material específico, temos os melhores profissionais.
+                Eles farão toda campanha publicitária. VT, outdoor, folder, anúncio e muito mais, somos uma empresa no mais alto padrão de qualidade
+                </p>
+            </div>
+        </article>
+        <article class="servico  bg-white radius">
+            <a href=""><img src="img/md.jpg" alt="Marketing Digital"></a>
+            <div class="inner">
+                <a href=""> Marketing Digítal</a>
+                <h4>Administração de Redes Sociais</h4>
+                <p>Como agência de publicidade aplicamos estratégias no meios digitais para que o seu negócio seja visto por milhões de usuários.
+                </p>
+            </div>
+        </article>
+        <article class="servico bg-white radius">
+            <a href=""><img src="img/cs.jpg" alt="Criação de Sites"></a>
+            <div class="inner">
+                <a href=""> Desenvolvimento de Sites</a>
+                <h4>Sites Administraveis</h4>
+                <p>Sites totalmente responsivos e administraveis, oferecendo a melhor experiência para o seu usuário.
+                </p>
+            </div>
+        </article>
+    </main>
+    <!-- NEWSLETTER -->
+    <section class="newsletter container bg-black">
+        <h2>Inscreva-se agora</h2>
+        <h3>Receba novidades, dicas e muito mais</h3>
+        <form action="">
+            <input type="email" id="email" class="bg-black radius" name="email" placeholder="Seu email">
+            <button type="button" class="bg-white radius" >Cadastrar</button>
+        </form>
+    </section>
+    <!-- RODAPÉ -->
+    <footer class="rodape container bg-gradiente">
+        <div class="social-icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-google"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-envelope"></i></a>
+        </div>
+        <p class="copyright">
+            Copyright NodeProp 2016. Todos os direitos reversados.
+        </p>
+    </footer>
+
+  
+    <!-- JQUERY -->
+    <!-- Instalação do pluggin jquery para fechamento do menu -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script>
+        $(".btn-menu").click(function(){
+            $(".menu").show();
+        });
+        $(".btn-close").click(function(){
+            $(".menu").hide();
+        })
+    </script>
+</body>
+</html>
